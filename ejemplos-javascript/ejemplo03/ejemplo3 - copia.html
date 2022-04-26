@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Demo JavaScript</title>
+  </head>
+  <body>
+    <h1>ESTUDIANTE</h1>
+    <p id="resultadoHTML"></p>
+    <p id="resultadoTexto"></p>
+    
+    <script type="text/javascript" charset="utf-8">
+      function nombres(a){
+        return "<h1>" + a + "</h1>";
+      }
+
+      function apellidos(b){
+        return"<h2>" + b + "</h2>";     
+      }
+      var entrada1 = window.prompt("Escriba los nombres: ", "0");
+      var entrada2 = window.prompt("Escriba los apellidos: ", "0");
+    
+      var c = nombres(entrada1);
+      document.getElementById("resultadoHTML").innerHTML = "<div>Nombres: " + 
+      nombres(entrada1) + "Apellidos: "+ apellidos(entrada2)+"</div>";
+
+      document.getElementById("resultadoTexto").innerText = "<div>Nombres: " + 
+      nombres(entrada1) + "Apellidos: "+ apellidos(entrada2)+"</div>";
+    </script>
+  </body>
+</html>
